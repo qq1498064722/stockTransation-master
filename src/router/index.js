@@ -23,7 +23,27 @@ const routes = [
     name:'dictory',
     component:() => import('../views/cotent/DictoryMangement.vue')
 
-  }
+  },
+  {
+        path:'/login',
+        name:'login',
+        component:() => import('../views/cotent/Login.vue')
+    },
+    {
+        path:'/asd',
+        name:'asd',
+        component:() => import('../views/cotent/asd.vue')
+    },
+    {
+        path:'/dayli',
+        name:'dayli',
+        component:() => import('../views/cotent/dayli.vue')
+    },
+    {
+        path:'/activeity',
+        bane:'avtiveity',
+        component:() => import('../views/cotent/ActiveityStar.vue')
+    }
 ]
 
 const router = new VueRouter({
