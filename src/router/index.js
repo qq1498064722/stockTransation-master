@@ -30,9 +30,9 @@ const routes = [
         component:() => import('../views/cotent/Login.vue')
     },
     {
-        path:'/asd',
-        name:'asd',
-        component:() => import('../views/cotent/asd.vue')
+        path:'/activeityend',
+        name:'activeityend',
+        component:() => import('../views/cotent/ActiveityEnd.vue')
     },
     {
         path:'/dayli',
@@ -41,8 +41,13 @@ const routes = [
     },
     {
         path:'/activeity',
-        bane:'avtiveity',
+        name:'avtiveitystar',
         component:() => import('../views/cotent/ActiveityStar.vue')
+    },
+    {
+        path:'/policy',
+        name:'policy',
+        component:() => import('../views/cotent/Policy.vue')
     }
 ]
 
