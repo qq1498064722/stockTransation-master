@@ -2,7 +2,7 @@
     <div>
         <el-breadcrumb separator="/">
             <el-breadcrumb-item :to="{ path: '/' }">系统管理</el-breadcrumb-item>
-            <el-breadcrumb-item><a href="/" style="color: #2b4bff;font-size: 14px">字典管理</a></el-breadcrumb-item>
+            <el-breadcrumb-item><a href="/" style="color: #2b4bff;font-size: 0.14rem">字典管理</a></el-breadcrumb-item>
         </el-breadcrumb>
         <div class="add">
             <ul class="addTitle">
@@ -27,9 +27,10 @@
 </script>
 
 <style scoped>
+    @import"../../assets/css/rem.css";
 .add {
-    width: 1590px;
-    height: 369px;
+    width: 15.9rem;
+    height: 3.69rem;
 }
     .itemTitle{
         display:flex;

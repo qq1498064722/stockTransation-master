@@ -1,12 +1,12 @@
 <template>
     <div>
         <div class="dayli">
-        <p style="text-align: left;margin-left: 19px"><span>系统管理 > </span><span style="color: rgb(65,89,254)"> 其他</span></p>
+        <p style="text-align: left;margin-left: 0.19rem"><span>系统管理 > </span><span style="color: rgb(65,89,254)"> 其他</span></p>
         <ul class="list">
             <li class="title">
-            <p style="margin-left: 18px">·日志管理</p>
+            <p style="margin-left: 0.18rem">·日志管理</p>
                 <div class="title-right">
-                    <p style="margin-right: 18px"><i class="iconfont iconzengjia"></i> 新增日志</p>
+                    <p style="margin-right: 0.18rem"><i class="iconfont iconzengjia"></i> 新增日志</p>
                 </div>
             </li>
             <li class="item">
@@ -30,6 +30,7 @@
 
 <style scoped>
     @import "../../assets/font/iconfont.css";
+    @import"../../assets/css/rem.css";
     .dayli{
     background:#fff;
     }
@@ -40,7 +41,7 @@
     .title-right{
         display:flex;
         justify-content: space-around;
-        width: 140px;
+        width: 1.4rem;
     }
     .title>p{
         background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)), to(rgb(149, 164, 219)));
@@ -54,21 +55,21 @@
     }
     .item{
         width: 100%;
-        height: 102px;
-        border: 1px solid #e3e8ec;
+        height: 1.02rem;
+        border: 0.01rem solid #e3e8ec;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-bottom: 34px;
+        margin-bottom: 0.34rem;
     }
     .item>img{
-        width: 66px;
-        height: 66px;
+        width: 0.66rem;
+        height: 0.66rem;
     }
     .item>i{
         background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(253,202,138)), to(rgb(240,132,125)));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 32px;
+        font-size: 0.32rem;
     }
 </style>

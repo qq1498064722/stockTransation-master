@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="right">
-                <p style="margin-right: 18px"><i class="iconfont iconzengjia"></i> 新增政策</p>
+                <p style="margin-right: 0.18rem"><i class="iconfont iconzengjia"></i> 新增政策</p>
             </div>
         </div>
         <div class="title">
@@ -32,7 +32,7 @@
             <p><i class="iconfont iconshaixuan" style=" background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)), to(rgb(149, 164, 219)));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 24px"></i> 筛选条件</p>
+        font-size: 0.24rem"></i> 筛选条件</p>
             <select name="area" lay-verify="">
                 <option value="" disabled>所属领域</option>
                 <option value="010">计算机</option>
@@ -51,7 +51,7 @@
                 <option value="021">农业</option>
                 <option value="0571">建筑</option>
             </select>
-                <el-button  @click="handleClick(scope.row)" style="background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)),to(rgb(149,164,219)));color: #fff;font-size: 16px;" size="small"> 确定</el-button>
+                <el-button  @click="handleClick(scope.row)" style="background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)),to(rgb(149,164,219)));color: #fff;font-size: 0.16rem;" size="small"> 确定</el-button>
             </div>
         </div>
             <el-table
@@ -67,7 +67,7 @@
                         prop="ActivityDate"
                         label="发布时间"
                         width="400"
-                        font-size="16px">
+                        font-size="0.16rem">
                 </el-table-column>
                 <el-table-column
                         prop="nickname"
@@ -128,29 +128,30 @@
 
 <style scoped>
     @import "https://at.alicdn.com/t/font_1514798_bf82tmbbkrt.css";
+    @import"../../assets/css/rem.css";
 div.content{
     width:100%;
     height: 100%;
     background: #fff;
 }
 .icontab{
-    width: 81px;
-    height: 39px;
+    width: 0.81rem;
+    height: 0.39rem;
     background: rgb(45,132,211);
     color: #fff;
     text-align: center;
-    line-height: 39px;
+    line-height: 0.39rem;
     border-radius: 5%;
 }
 .icontab>i{
-    font-size: 30px;
+    font-size: 0.30rem;
 }
     .select{
-        padding-left: 12px;
+        padding-left: 0.12rem;
         display: flex;
     }
     .right{
-        font-size: 18px;
+        font-size: 0.18rem;
     }
     .right>p{
         background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)), to(rgb(149, 164, 219)));
@@ -166,26 +167,26 @@ div.content{
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 12px;
+        padding: 0 0.12rem;
     }
     .conditions{
         width: 100%;
         text-align: left;
-        border-top: 1px solid #e3e8ec;
-        border-bottom: 1px solid #e3e8ec;
+        border-top: 0.01rem solid #e3e8ec;
+        border-bottom: 0.01rem solid #e3e8ec;
         display:flex;
         justify-content: space-between;
         align-items: center;
     }
     .conditions>select{
-        width: 230px;
-        height: 40px;
+        width: 2.3rem;
+        height: 0.4rem;
     }
     select>option{
         color: rgb(192,196,204);
     }
     .conditions>i{
-        margin-left: 24px;
+        margin-left: 0.24rem;
     }
     .title{
         width: 70%;

@@ -1,8 +1,8 @@
 <template>
     <div>
         <!--        面包屑-->
-        <el-breadcrumb separator-class="el-icon-arrow-right" style="margin: 30px 0;">
-            <el-breadcrumb-item :to="{ path: '/' }" style="margin-left: 12px">数据管理</el-breadcrumb-item>
+        <el-breadcrumb separator-class="el-icon-arrow-right" style="margin: 0.3rem 0;">
+            <el-breadcrumb-item :to="{ path: '/' }" style="margin-left: 0.12rem">数据管理</el-breadcrumb-item>
             <el-breadcrumb-item><span style="color: rgb(59,86,252)">活动发布</span></el-breadcrumb-item>
         </el-breadcrumb>
         <!--        内容标题-->
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <p style="margin-right: 18px"><i class="iconfont iconzengjia"></i> 发布活动</p>
+                    <p style="margin-right: 0.18rem"><i class="iconfont iconzengjia"></i> 发布活动</p>
                 </div>
             </div>
             <el-table
@@ -64,7 +64,7 @@
                         prop="ActivityDate"
                         label="活动起止日期"
                         width="230"
-                        font-size="16px">
+                        font-size="0.16rem">
                 </el-table-column>
                 <el-table-column
                         prop="RegistrationDate"
@@ -134,7 +134,7 @@
                         prop="ActivityDate"
                         label="活动起止日期"
                         width="230"
-                        font-size="16px">
+                        font-size="0.16rem">
                 </el-table-column>
                 <el-table-column
                         prop="RegistrationDate"
@@ -210,37 +210,38 @@
 
 <style scoped>
     @import "https://at.alicdn.com/t/font_1514798_bf82tmbbkrt.css";
+    @import"../../assets/css/rem.css";
     .content-title{
         width: 100%;
-        height: 60px;
+        height: 0.6rem;
         display: flex;
-        margin-bottom: 27px;
+        margin-bottom: 0.27rem;
     }
     .activeStar{
         width: 50%;
         height: 100%;
-        line-height: 60px;
+        line-height: 0.6rem;
         text-align: center;
-        font-size: 20px;
+        font-size: 0.2rem;
         background: linear-gradient(-89deg,#214ac0 0%,#53bedd 100%);
     }
     .activeEnd{
         width: 50%;
         height: 100%;
-        line-height: 60px;
+        line-height: 0.6rem;
         text-align: center;
-        font-size: 20px;
+        font-size: 0.2rem;
         background: rgb(226,234,255);
     }
     .iconbox{
         display: inline-block;
-        width: 24px;
-        height: 24px;
+        width: 0.24rem;
+        height: 0.24rem;
         background-color: #fff;
         border-radius: 50%;
-        line-height: 24px;
-        font-size: 14px;
-        margin-right: 20px;
+        line-height: 0.24rem;
+        font-size: 0.14rem;
+        margin-right: 0.20rem;
     }
     .iconbox>.iconselect{
         background: linear-gradient(-89deg,#214ac0 0%,#53bedd 100%);
@@ -260,24 +261,24 @@
         align-items: center;
     }
     .select{
-        padding-left: 12px;
+        padding-left: 0.12rem;
         display: flex;
     }
     .icontab{
-        width: 81px;
-        height: 39px;
+        width: 0.81rem;
+        height: 0.39rem;
         background: rgb(45,132,211);
         color: #fff;
         text-align: center;
-        line-height: 39px;
+        line-height: 0.39rem;
         border-radius: 5%;
     }
     .icontab>i{
-        font-size: 30px;
+        font-size: 0.30rem;
     }
     .right{
         margin: 0;
-        font-size: 18px;
+        font-size: 0.18rem;
     }
     .right>p{
         background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)), to(rgb(149, 164, 219)));
@@ -296,6 +297,6 @@
         width: 100%;
     }
     .search1{
-        padding:10px 0;
+        padding:0.10rem 0;
     }
 </style>

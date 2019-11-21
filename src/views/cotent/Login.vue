@@ -3,7 +3,7 @@
         <div class="bg">
         </div>
         <el-card class="box-card">
-            <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
+            <el-form :label-position="labelPosition" label-width="0.8rem" :model="formLabelAlign">
                 <el-form-item label="名称">
                     <el-input type="text" placeholder="请输入账号" v-model="input"></el-input>
                 </el-form-item>
@@ -38,6 +38,7 @@
 
 </style>
 <style>
+    @import"../../assets/css/rem.css";
     .box-card {
         position: absolute;
         left: 0;
@@ -45,8 +46,8 @@
         right: 0;
         bottom: 0;
         margin: auto;
-        width: 480px;
-        height: 320px;
+        width: 4.8rem;
+        height: 3.2rem;
     }
     .bg{
         position: absolute;
@@ -57,19 +58,19 @@
     }
     footer{
         position: absolute;
-        bottom: 10px;
-        margin-left: calc(50% - 154px);
-        font-size: 12px;
+        bottom: 0.1rem;
+        margin-left: calc(50% - 1.54rem);
+        font-size: 0.12rem;
         font-family: "微软雅黑";
         color: rgb(81, 81, 81);
     }
     .el-form-item{
         text-align: left;
-        margin:5px;
+        margin:0.05rem;
     }
     .el-button{
         width: 100%;
-        height: 44px;
-        margin-top: 24px;
+        height: 0.44rem;
+        margin-top: 0.24rem;
     }
 </style>
