@@ -22,12 +22,11 @@
                         <div class="photo"></div>
                         <div class="nickname">admin</div>
                         <el-dropdown>
-                        <i class="iconfont icontoBottom-fill el-icon-setting"></i>
+                        <i class="iconfont icontoBottom-fill el-icon-setting" style="padding-bottom: 0.5rem;font-size: 0.24rem"></i>
                         <!--下拉列表-->
                         <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item>查看</el-dropdown-item>
-                            <el-dropdown-item>新增</el-dropdown-item>
-                            <el-dropdown-item>删除</el-dropdown-item>
+                            <el-dropdown-item>设置</el-dropdown-item>
+                            <el-dropdown-item>退出</el-dropdown-item>
                         </el-dropdown-menu>
                             <!--下拉结束-->
                         </el-dropdown>
@@ -45,6 +44,7 @@
                             <span style="font-size: 0.21rem;color:#333333">数据管理</span>
                         </template>
                         <el-menu-item-group>
+                            <el-menu-item index="1-2" style="font-size: 0.19rem;color: #808080">登记托管</el-menu-item>
                             <el-menu-item index="1-2" style="font-size: 0.19rem;color: #808080">活动发布</el-menu-item>
                             <el-menu-item index="1-1" style="font-size: 0.19rem;color: #808080">报名管理</el-menu-item>
                             <el-menu-item index="1-3" style="font-size: 0.19rem;color: #808080">政策入库</el-menu-item>
@@ -71,27 +71,12 @@
 </template>
 
 <script>
-//获取当前屏幕尺寸并调整相应的大小
-    window.onresize = function ()// 绑定到窗口的这个事件中
-    {
 
-        let designSize = 1920; // 设计图尺寸
-
-        let html = document.documentElement;
-
-        let wW = html.clientWidth;// 窗口宽度
-        let rem = wW * 100 / designSize;
-
-        document.documentElement.style.fontSize = rem + 'rem';
-    };
-    export default {
-        name: "my-external"
-    }
 </script>
 
 <style scoped>
-        @import "../../assets/font/iconfont.css";
-        @import"../../assets/css/rem.css";
+    @import "https://at.alicdn.com/t/font_1514798_d8fz58wwux7.css";
+    @import"../../assets/css/rem.css";
     /*    导航栏*/
     .el-header{
         background-color: rgb(139,155,250);
@@ -102,8 +87,15 @@
         display:flex;
         justify-content: space-between;
     }
+        .el-menu{
+            position: fixed;
+            top: 60px;
+            left: 0;
+            bottom: 0;
+            width: 15%;
+        }
     .total{
-        width: 2.6rem;
+        width: 15%;
         height: 100%;
         display: flex;
         justify-content: space-around;
@@ -143,7 +135,7 @@
     }
     .users{
         display:flex;
-        justify-content:space-around;
+        justify-content:space-between;
         align-items: center;
     }
     .photo{

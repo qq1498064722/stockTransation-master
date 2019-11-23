@@ -1,7 +1,8 @@
 <template>
+    <!--报名管理-->
     <div>
         <!--        面包屑-->
-        <el-breadcrumb separator-class="el-icon-arrow-right" style="margin: 0.3rem 0;">
+        <el-breadcrumb separator-class="el-icon-arrow-right" style="margin: 0.24rem 0;">
             <el-breadcrumb-item :to="{ path: '/' }" style="margin-left: 0.12rem">数据管理</el-breadcrumb-item>
             <el-breadcrumb-item><span style="color: rgb(59,86,252)">报名管理</span></el-breadcrumb-item>
         </el-breadcrumb>
@@ -37,8 +38,8 @@
                                 :value="item.value">
                         </el-option>
                     </el-select>
-                    <div class="icontab">
-                        <i class="iconfont iconsousuo"></i>
+                    <div class="icontab" style="height: 0.55rem;">
+                        <i class="iconfont iconsousuo" style="line-height: 0.5rem;"></i>
                     </div>
                 </div>
                 <div class="right">
@@ -85,11 +86,10 @@
                     </template>
                 </el-table-column>
             </el-table>
-
         </div>
         <!--        已结束-->
         <div class="content" v-show="flag == 2">
-            <div class="search1">
+            <div class="search">
                 <div class="select">
                     <el-select
                             v-model="value"
@@ -107,8 +107,8 @@
                                 :value="item.value">
                         </el-option>
                     </el-select>
-                    <div class="icontab">
-                        <i class="iconfont iconsousuo"></i>
+                    <div class="icontab" style="height: 0.55rem;">
+                        <i class="iconfont iconsousuo" style="line-height: 0.5rem;"></i>
                     </div>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                 <el-table-column
                         prop="RegistrationDate"
                         label="报名企业人数"
-                        width="200">
+                        width="230">
                 </el-table-column>
                 <el-table-column
                         prop="nickname"
@@ -148,8 +148,7 @@
                         label="操作"
                         width="150">
                     <template slot-scope="scope">
-                        <el-button id="flagtwo" @click="handleClick(scope.row)" type="text" size="small"><i class="iconfont iconchakan"></i> 查看</el-button>
-                        <!--<el-button type="text" size="small"><i class="iconfont icontableedit"></i> 编辑</el-button>-->
+                        <el-button @click="handleClick(scope.row)" type="text" size="small"><i class="iconfont iconchakan"></i> 查看</el-button>
                     </template>
                 </el-table-column>
             </el-table>
@@ -219,7 +218,7 @@
         height: 100%;
         line-height: 0.6rem;
         text-align: center;
-        font-size: 0.20rem;
+        font-size: 0.2rem;
         background: linear-gradient(-89deg,#214ac0 0%,#53bedd 100%);
     }
     .activeEnd{
@@ -250,6 +249,7 @@
     }
     .content{
         width: 100%;
+        padding-top: 0.24rem;
         background:#fff;
     }
     .search{

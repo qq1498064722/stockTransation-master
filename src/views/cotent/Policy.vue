@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="right">
-                <p style="margin-right: 0.18rem"><i class="iconfont iconzengjia"></i> 新增政策</p>
+                <p style="margin-right: 0.36rem"><i class="iconfont iconzengjia"></i> 新增政策</p>
             </div>
         </div>
         <div class="title">
@@ -32,7 +32,7 @@
             <p><i class="iconfont iconshaixuan" style=" background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)), to(rgb(149, 164, 219)));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 0.24rem"></i> 筛选条件</p>
+        font-size: 0.48rem"></i> 筛选条件</p>
             <select name="area" lay-verify="">
                 <option value="" disabled>所属领域</option>
                 <option value="010">计算机</option>
@@ -135,23 +135,23 @@ div.content{
     background: #fff;
 }
 .icontab{
-    width: 0.81rem;
-    height: 0.39rem;
+    width: 1.62rem;
+    height: 0.78rem;
     background: rgb(45,132,211);
     color: #fff;
     text-align: center;
-    line-height: 0.39rem;
+    line-height: 0.78rem;
     border-radius: 5%;
 }
 .icontab>i{
     font-size: 0.30rem;
 }
     .select{
-        padding-left: 0.12rem;
+        padding-left: 0.24rem;
         display: flex;
     }
     .right{
-        font-size: 0.18rem;
+        font-size: 0.36rem;
     }
     .right>p{
         background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(162, 215, 235)), to(rgb(149, 164, 219)));
@@ -167,7 +167,7 @@ div.content{
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 0.12rem;
+        padding: 0 0.24rem;
     }
     .conditions{
         width: 100%;
@@ -179,14 +179,14 @@ div.content{
         align-items: center;
     }
     .conditions>select{
-        width: 2.3rem;
-        height: 0.4rem;
+        width: 4.6rem;
+        height: 0.8rem;
     }
     select>option{
         color: rgb(192,196,204);
     }
     .conditions>i{
-        margin-left: 0.24rem;
+        margin-left: 0.48rem;
     }
     .title{
         width: 70%;

@@ -1,12 +1,13 @@
 <template>
+    <!--活动发布-->
     <div>
         <!--        面包屑-->
-        <el-breadcrumb separator-class="el-icon-arrow-right" style="margin: 0.3rem 0;">
+        <el-breadcrumb separator-class="el-icon-arrow-right" style="margin: 0.24rem 0;">
             <el-breadcrumb-item :to="{ path: '/' }" style="margin-left: 0.12rem">数据管理</el-breadcrumb-item>
             <el-breadcrumb-item><span style="color: rgb(59,86,252)">活动发布</span></el-breadcrumb-item>
         </el-breadcrumb>
         <!--        内容标题-->
-        <div class="content-title" style="margin: 0">
+        <div class="content-title">
             <div :class="[flag==1?'activeStar':'activeEnd']" @click="contenttitle(1)">
                 <div class="iconbox"><i class="iconfont iconjinhangzhong" :class="[flag==1?'iconselect':'iconnone']"></i></div>
                 <span>未结束活动</span>
@@ -37,8 +38,8 @@
                                 :value="item.value">
                         </el-option>
                     </el-select>
-                    <div class="icontab">
-                        <i class="iconfont iconsousuo"></i>
+                    <div class="icontab" style="height: 0.55rem;">
+                        <i class="iconfont iconsousuo" style="line-height: 0.5rem;"></i>
                     </div>
                 </div>
                 <div class="right">
@@ -62,13 +63,13 @@
                 </el-table-column>
                 <el-table-column
                         prop="ActivityDate"
-                        label="活动起止日期"
+                        label="报名起止日期"
                         width="230"
                         font-size="0.16rem">
                 </el-table-column>
                 <el-table-column
                         prop="RegistrationDate"
-                        label="报名起止日期"
+                        label="报名企业人数"
                         width="230">
                 </el-table-column>
                 <el-table-column
@@ -81,18 +82,15 @@
                         label="操作"
                         width="150">
                     <template slot-scope="scope">
-
                         <el-button @click="handleClick(scope.row)" type="text" size="small"><i class="iconfont iconchakan"></i> 查看</el-button>
-
                         <el-button type="text" size="small"><i class="iconfont icontableedit"></i> 编辑</el-button>
                     </template>
                 </el-table-column>
             </el-table>
-
         </div>
         <!--        已结束-->
         <div class="content" v-show="flag == 2">
-            <div class="search1">
+            <div class="search">
                 <div class="select">
                     <el-select
                             v-model="value"
@@ -110,8 +108,8 @@
                                 :value="item.value">
                         </el-option>
                     </el-select>
-                    <div class="icontab">
-                        <i class="iconfont iconsousuo"></i>
+                    <div class="icontab" style="height: 0.55rem;">
+                        <i class="iconfont iconsousuo" style="line-height: 0.5rem;"></i>
                     </div>
                 </div>
             </div>
@@ -132,14 +130,14 @@
                 </el-table-column>
                 <el-table-column
                         prop="ActivityDate"
-                        label="活动起止日期"
+                        label="报名起止日期"
                         width="230"
                         font-size="0.16rem">
                 </el-table-column>
                 <el-table-column
                         prop="RegistrationDate"
-                        label="参与企业人数"
-                        width="200">
+                        label="报名企业人数"
+                        width="230">
                 </el-table-column>
                 <el-table-column
                         prop="nickname"
@@ -151,8 +149,7 @@
                         label="操作"
                         width="150">
                     <template slot-scope="scope">
-                        <el-button id="flagtwo" @click="handleClick(scope.row)" type="text" size="small"><i class="iconfont iconchakan"></i> 查看</el-button>
-                        <!--<el-button type="text" size="small"><i class="iconfont icontableedit"></i> 编辑</el-button>-->
+                        <el-button @click="handleClick(scope.row)" type="text" size="small"><i class="iconfont iconchakan"></i> 查看</el-button>
                     </template>
                 </el-table-column>
             </el-table>
@@ -215,7 +212,6 @@
         width: 100%;
         height: 0.6rem;
         display: flex;
-        margin-bottom: 0.27rem;
     }
     .activeStar{
         width: 50%;
@@ -253,6 +249,7 @@
     }
     .content{
         width: 100%;
+        padding-top: 0.24rem;
         background:#fff;
     }
     .search{

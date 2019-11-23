@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('../views/cotent/index.vue')
+    component: () => import('../views/cotent/Index.vue')
   },
   {
     path: '/about',
@@ -17,12 +17,6 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
-    path:'/dictory',
-    name:'dictory',
-    component:() => import('../views/cotent/DictoryMangement.vue')
-
   },
   {
         path:'/login',
@@ -37,17 +31,42 @@ const routes = [
     {
         path:'/dayli',
         name:'dayli',
-        component:() => import('../views/cotent/dayli.vue')
+        component:() => import('../views/cotent/Dayli.vue')
     },
     {
-        path:'/activeity',
-        name:'avtiveitystar',
+        path:'/activeitystar',
+        name:'activeitystar',
         component:() => import('../views/cotent/ActiveityStar.vue')
     },
     {
         path:'/policy',
         name:'policy',
         component:() => import('../views/cotent/Policy.vue')
+    },
+    {
+        path:'/join',
+        name:'join',
+        component:() => import('../views/cotent/Join.vue')
+    },
+    {
+        path:'/question',
+        name:'question',
+        component:() => import('../views/cotent/Question.vue')
+    },
+    {
+        path:'/exam',
+        name:'exam',
+        component:() => import('../views/cotent/Test.vue')
+    },
+    {
+        path:'/financ',
+        name:'financ',
+        component:() => import('../views/cotent/Financ.vue')
+    },
+    {
+        path:'/newsend',
+        name:'newsend',
+        component:() => import('../views/cotent/Newsend.vue')
     }
 ]
 
