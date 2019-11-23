@@ -260,6 +260,8 @@
     .select{
         padding-left: 0.12rem;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .icontab{
         width: 0.81rem;

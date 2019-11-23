@@ -71,6 +71,13 @@
                     </template>
                 </el-table-column>
             </el-table>
+            <div style="margin-top: 0.12rem">
+            <el-pagination
+                    background
+                    layout="prev, pager, next"
+                    :total="1000">
+            </el-pagination>
+            </div>
         </div>
         <!--        已结束-->
         <div class="content" v-show="flag == 2">
@@ -170,8 +177,9 @@
                 } else {
                     this.options = [];
                 }
-            }
-        }
+            },
+        },
+
     }
 </script>
 

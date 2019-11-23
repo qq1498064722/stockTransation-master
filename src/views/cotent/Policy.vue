@@ -1,5 +1,5 @@
 <template>
-<div>
+<div style="margin: 0.24rem;">
     <div class="content">
         <div class="search">
             <div class="select">
@@ -75,7 +75,6 @@
                         width="200">
                 </el-table-column>
                 <el-table-column
-                        fixed="right"
                         label="操作"
                         width="200">
                     <template slot-scope="scope">
